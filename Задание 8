@@ -1,0 +1,11 @@
+public class StringRepeater {
+    public static void main(String[] args) {
+        repeatString("Привет!", 5);
+    }
+
+    public static void repeatString(String str, int count) {
+        for (int i = 0; i < count; i++) {
+            System.out.println(str);
+        }
+    }
+}
