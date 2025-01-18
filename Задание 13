@@ -1,0 +1,24 @@
+public class DiagonalMatrix {
+    public static void main(String[] args) {
+        int size = 5; // Размер матрицы (размерность n x n)
+        int[][] matrix = new int[size][size];
+
+        fillDiagonal(matrix);
+        printMatrix(matrix);
+    }
+
+    public static void fillDiagonal(int[][] matrix) {
+        for (int i = 0; i < matrix.length; i++) {
+            matrix[i][i] = 1; // Заполняем главную диагональ единицами
+        }
+    }
+
+    public static void printMatrix(int[][] matrix) {
+        for (int i = 0; i < matrix.length; i++) {
+            for (int j = 0; j < matrix[i].length; j++) {
+                System.out.printf("%d ", matrix[i][j]);
+            }
+            System.out.println(); // Переход на новую строку после каждой строки матрицы
+        }
+    }
+}
