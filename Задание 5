@@ -1,0 +1,13 @@
+public class SumRangeChecker {
+    public static void main(String[] args) {
+        int num1 = 8;
+        int num2 = 12;
+        boolean result = isSumWithinRange(num1, num2);
+        System.out.println("Сумма " + num1 + " и " + num2 + " лежит в диапазоне от 10 до 20: " + result);
+    }
+
+    public static boolean isSumWithinRange(int a, int b) {
+        int sum = a + b;
+        return (sum >= 10 && sum <= 20);
+    }
+}
